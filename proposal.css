@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right,#3E5151,#DECBA4);
+}
+
+.project{
+	width: 100%;
+    margin: 25px auto;
+    background: url("/images/library.jpg");
+    height: 400px;
+    background-size: contain;
+}
+
+.project .project_title{
+    text-align: center;
+    font-size: 42px;
+    font-weight: bolder;
+    margin-bottom: 5%;
+    color: #ffffff;
+}
+
+.project .project_team{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.des_wrap{
+    display: flex;
+    color: #fff;
+}
+
+.des_wrap .title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.project_des{
+    font-size: 20px;
+    margin: 5%;
+    width: 60%;
+}
+
+.des_wrap .features{
+    font-size: 20px;
+    width: 40%;
+}
+
+.des_wrap .features ul li{
+    margin-bottom: 5px;
+}
+
+.gantt img{
+    margin-left: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width:959px){
+    .project{
+        width: 80%;
+    }
+
+    .project .project_title{
+        font-size: 30px;
+    }
+
+    .des_wrap{
+        display:inline-block;
+    }
+
+    .des_wrap .project_des{
+        width: 80%;
+    }
+
+    .des_wrap .features{
+        width: 80%;
+        margin: 5%;
+    }
+
+    .gantt img{
+        float: left;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:414px){
+    .project{
+        width: 80%;
+        height: 300px;
+    }
+
+    .project .project_title,
+    .project .project_team{
+        font-size:25px;
+    }
+
+}
+
+
+
